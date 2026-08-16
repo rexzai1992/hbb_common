@@ -54,7 +54,7 @@ const SERIAL: i32 = 3;
 
 #[cfg(target_os = "macos")]
 lazy_static::lazy_static! {
-    pub static ref ORG: RwLock<String> = RwLock::new("com.carriez".to_owned());
+    pub static ref ORG: RwLock<String> = RwLock::new("com.craveasia".to_owned());
 }
 
 type Size = (i32, i32, i32, i32);
@@ -119,8 +119,8 @@ const CHARS: &[char] = &[
 
 // CraveDesk branding: set to your hbbs host and the contents of its
 // id_ed25519.pub before building (see BRANDING.md at the repo root).
-pub const RENDEZVOUS_SERVERS: &[&str] = &["cravedesk.example.com"];
-pub const RS_PUB_KEY: &str = "";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["13.140.148.77"];
+pub const RS_PUB_KEY: &str = "zh+hPhX650ehWT1OM3xb+FWJUFehjelKEYPSUSYzYhY=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
